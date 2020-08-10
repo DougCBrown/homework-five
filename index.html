@@ -7,16 +7,23 @@
     <meta name="author" content="Doug Brown - Network Media Technology, LLC" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -38,7 +45,7 @@
         <div>
           <div class="row">
 <!-- I could only figure out a simple way to come up with building the layout for the information for each hour. -->            
-              <div class="col-2 mt-4 hour-block t1">9:00 AM</div>
+              <div class="col-2 mt-4 hour-block" data-hours="9">9:00 AM</div>
               <textarea class="col-8 first entertext e9"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b9"></button>
           </div>
@@ -46,49 +53,49 @@
   mt-4 is being used to set the margin-top to 1.5 the text area is a 8 columns and the e?? is the variable for the text 
   that is put in-->
           <div class="row">
-              <div class="col-2 mt-4 hour-block t2">10:00 AM</div>
+              <div class="col-2 mt-4 hour-block" data-hours="10">10:00 AM</div>
               <textarea class="col-8 e10"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b10"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 hour-block t3">11:00 AM</div>
+              <div class="col-2 mt-4 hour-block" data-hours="11">11:00 AM</div>
               <textarea class="col-8 e11"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b11"></button> 
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 hour-block t4">12:00 PM</div>
+              <div class="col-2 mt-4 hour-block"  data-hours="12">12:00 PM</div>
               <textarea class="col-8 e12"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b12"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 hour-block t5">1:00 PM</div>
+              <div class="col-2 mt-4 hour-block" data-hours="13">1:00 PM</div>
               <textarea class="col-8 e1"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b1"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 hour-block t6">2:00 PM</div>
+              <div class="col-2 mt-4 hour-block" data-hours="14">2:00 PM</div>
               <textarea class="col-8 e2"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b2"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 hour-block t7">3:00 PM</div>
+              <div class="col-2 mt-4 hour-block" data-hours="15" >3:00 PM</div>
               <textarea class="col-8 e3"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b3"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 hour-block t8">4:00 PM</div>
+              <div class="col-2 mt-4 hour-block" data-hours="16">4:00 PM</div>
               <textarea class="col-8 e4"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b4"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 hour-block t9">5:00 PM</div>
+              <div class="col-2 mt-4 hour-block" data-hours="17">5:00 PM</div>
               <textarea class="col-8 e5"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b5"></button>
           </div> 
@@ -101,6 +108,5 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/moment.min.js"></script>
   </body>
 </html>
