@@ -1,11 +1,14 @@
-
+/* setting the font, font size line height and the background
+    color of the full body of the page*/
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
     background-color: tan;
 }
-  
+/* The textarea is used to receive the users input for the items that need to be done 
+    throughout the work day. The textarea will allow for a large number of words to be 
+    typed in.*/
 textarea {
     background: transparent;
     border: none;
@@ -16,10 +19,15 @@ textarea {
     padding: 10px;
     line-height: 120%;
 }
+/* the header section is where the jumbotron is located and 
+    worked to be sure the alignment would be at the top of the page*/
 header {
     padding: 0px;
     vertical-align: top;
 }
+/* section is being used to contain the calendar layout and help with
+    the border styling and the alignment to keep it at the top just below
+    the header. */
 section {
     width: 900px;
     border: black 5px;
@@ -28,19 +36,21 @@ section {
     vertical-align: top;
     background-color: white;
 }
-section.div {
-    box-shadow: #7c7c7c;    
-}
-.first {
+
+/*.first {
     border-top: 1px solid black;
-}
+}*/
+/* With the verticle-center, I am trying to align the content
+    of the jumbotron in the center of the box and vertically align it from 
+    the top of the page so the it looks well layed out*/
 .vertical-center {
     background: transparent;
     min-height: 100vh;
     align-content: center;
     vertical-align: top;
   }
-  
+/* Trying to improve on the look of the jumbotron making it slightly smaller
+    and creating a shadow to make it come out of the page */  
 .jumbotron {
     position: relative;
     z-index: 2;
@@ -51,10 +61,8 @@ section.div {
     background-color: transparent;
     color: black;
     border-radius: 10px ;
-    border: 2px inset gray;
-    box-shadow: #7c7c7c;
+    border: 4px inset gray;
     padding: 0px;
-
 }
 
 #currentDay {
@@ -66,7 +74,7 @@ section.div {
     white-space: pre-wrap;
 }
   
-.time-block{
+.hour-block{
     text-align: center;
     border-bottom: 1px solid black; 
 }
@@ -82,16 +90,16 @@ section.div {
     border-top: 1px dashed #000000;
 }
   
-.past {
+textarea.past {
     background-color: #7c7c7c;
     color: white;
 }
   
-.present {
+textarea.present {
     background-color: red;
 }
   
-.future {
+textarea.future {
     background-color: #77dd77;
 }
   

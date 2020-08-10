@@ -1,4 +1,21 @@
+
 //Buttons will save user inputs to local store. Additionally if there is saved inputs, they will display in the textarea.
+function update() {
+    var currentDate = new Date();
+    $(".time-block").each(function () {
+        var thisHours = $(this).data("hours");
+        var difference = currentDate.getHours() - thisHours;
+
+        if(difference < 0) {
+            $(this).find("textarea").addClass("future");
+        }else if(difference === 0) {
+            $(this).find("textarea").addClass("current");
+        } else {
+            $(this).find("textarea").addClass("past");
+        }
+        });
+}
+
 $(".b9").on("click", function() {
     var entertext = $(".e9").val();
     localStorage.setItem("9:00", entertext);

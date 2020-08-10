@@ -21,64 +21,74 @@
     <title>Work Day Scheduler</title>
   </head>
   <body>
+<!-- using the jumbotron layout the heading section which contains the title of the application
+  work day schedule along with the simple information explaining what the calendar is for. Using display-5 to format the size of the text-->
     <header class="jumbotron  container verticle-center">
         <p class="display-5">Work Day Scheduler<br/>
         A simple scheduler to plan your work day<br/></p>
+<!-- In this paragraph which is still part of the jumbotron header section using currentday which comes from moment.js and pulls the 
+  currenty date and formates it for us. I am still trying to figure out how to put forward and backward arrows around the day to be able
+  to try to page back and forth through each day of the month. I still have not figured that part out. It would be handy to use that and still with out
+  checking the console to see if it has store the previous information. It would make the work schedule more functional to be able to put in the future
+  work schedules-->
         <p id="currentDay" class="lead"></p>
     </header>
     <section class="container">
       <div class="mb-4">
         <div>
           <div class="row">
-              <div class="col-2 mt-4 time-block t1">9:00 AM</div>
+<!-- I could only figure out a simple way to come up with building the layout for the information for each hour. -->            
+              <div class="col-2 mt-4 hour-block t1">9:00 AM</div>
               <textarea class="col-8 first entertext e9"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b9"></button>
           </div>
-
+<!-- building the column layout for each row, for the time we are using 2 columns 
+  mt-4 is being used to set the margin-top to 1.5 the text area is a 8 columns and the e?? is the variable for the text 
+  that is put in-->
           <div class="row">
-              <div class="col-2 mt-4 time-block t2">10:00 AM</div>
+              <div class="col-2 mt-4 hour-block t2">10:00 AM</div>
               <textarea class="col-8 e10"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b10"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 time-block t3">11:00 AM</div>
+              <div class="col-2 mt-4 hour-block t3">11:00 AM</div>
               <textarea class="col-8 e11"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b11"></button> 
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 time-block t4">12:00 PM</div>
+              <div class="col-2 mt-4 hour-block t4">12:00 PM</div>
               <textarea class="col-8 e12"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b12"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 time-block t5">1:00 PM</div>
+              <div class="col-2 mt-4 hour-block t5">1:00 PM</div>
               <textarea class="col-8 e1"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b1"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 time-block t6">2:00 PM</div>
+              <div class="col-2 mt-4 hour-block t6">2:00 PM</div>
               <textarea class="col-8 e2"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b2"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 time-block t7">3:00 PM</div>
+              <div class="col-2 mt-4 hour-block t7">3:00 PM</div>
               <textarea class="col-8 e3"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b3"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 time-block t8">4:00 PM</div>
+              <div class="col-2 mt-4 hour-block t8">4:00 PM</div>
               <textarea class="col-8 e4"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b4"></button>
           </div>
 
           <div class="row">
-              <div class="col-2 mt-4 time-block t9">5:00 PM</div>
+              <div class="col-2 mt-4 hour-block t9">5:00 PM</div>
               <textarea class="col-8 e5"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b5"></button>
           </div> 
