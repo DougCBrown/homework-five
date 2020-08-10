@@ -1,8 +1,8 @@
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
-    border: black;
 }
   
 textarea {
@@ -19,17 +19,27 @@ header {
     padding: 0px;
     vertical-align: top;
 }
+section {
+    border: black 5px;
+    border-style: inset;
+    border-radius: 10px;
+    box-shadow: #7c7c7c;
+    vertical-align: top;
+}
 .first {
     border-top: 1px solid black;
 }
 .vertical-center {
     background: transparent;
-    min-height: 100vh; /* These two lines are counted as one :-)       */
+    min-height: 100vh;
     align-content: center;
     vertical-align: top;
   }
   
 .jumbotron {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 16px -6px black;
     vertical-align: top;
     font-size: 30px;
     text-align: center;
@@ -38,6 +48,7 @@ header {
     border-radius: 10px ;
     border: 2px inset gray;
     box-shadow: #7c7c7c;
+    padding: 0px;
 
 }
 

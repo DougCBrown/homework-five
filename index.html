@@ -22,72 +22,78 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
   <body>
     <header class="jumbotron  container verticle-center">
         <p class="display-5">Work Day Scheduler<br/>
         A simple scheduler to plan your work day<br/></p>
         <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container mb-4">
-        <div class="row">
-            <div class="col-2 mt-4 time-block t1">9:00 AM</div>
-            <textarea class="col-8 first entertext e9"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b9"></button>
-        </div>
+    <section class="container">
+      <div class="mb-4">
+          <div class="row">
+              <div class="col-2 mt-4 time-block t1">9:00 AM</div>
+              <textarea class="col-8 first entertext e9"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b9"></button>
+          </div>
 
-        <div class="row">
-            <div class="col-2 mt-4 time-block t2">10:00 AM</div>
-            <textarea class="col-8 e10"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b10"></button>
-        </div>
+          <div class="row">
+              <div class="col-2 mt-4 time-block t2">10:00 AM</div>
+              <textarea class="col-8 e10"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b10"></button>
+          </div>
 
-        <div class="row">
-            <div class="col-2 mt-4 time-block t3">11:00 AM</div>
-            <textarea class="col-8 e11"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b11"></button> 
-        </div>
+          <div class="row">
+              <div class="col-2 mt-4 time-block t3">11:00 AM</div>
+              <textarea class="col-8 e11"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b11"></button> 
+          </div>
 
-        <div class="row">
-            <div class="col-2 mt-4 time-block t4">12:00 PM</div>
-            <textarea class="col-8 e12"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b12"></button>
-        </div>
+          <div class="row">
+              <div class="col-2 mt-4 time-block t4">12:00 PM</div>
+              <textarea class="col-8 e12"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b12"></button>
+          </div>
 
-        <div class="row">
-            <div class="col-2 mt-4 time-block t5">1:00 PM</div>
-            <textarea class="col-8 e1"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b1"></button>
-        </div>
+          <div class="row">
+              <div class="col-2 mt-4 time-block t5">1:00 PM</div>
+              <textarea class="col-8 e1"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b1"></button>
+          </div>
 
-        <div class="row">
-            <div class="col-2 mt-4 time-block t6">2:00 PM</div>
-            <textarea class="col-8 e2"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b2"></button>
-        </div>
+          <div class="row">
+              <div class="col-2 mt-4 time-block t6">2:00 PM</div>
+              <textarea class="col-8 e2"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b2"></button>
+          </div>
 
-        <div class="row">
-            <div class="col-2 mt-4 time-block t7">3:00 PM</div>
-            <textarea class="col-8 e3"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b3"></button>
-        </div>
+          <div class="row">
+              <div class="col-2 mt-4 time-block t7">3:00 PM</div>
+              <textarea class="col-8 e3"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b3"></button>
+          </div>
 
-        <div class="row">
-            <div class="col-2 mt-4 time-block t8">4:00 PM</div>
-            <textarea class="col-8 e4"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b4"></button>
-        </div>
+          <div class="row">
+              <div class="col-2 mt-4 time-block t8">4:00 PM</div>
+              <textarea class="col-8 e4"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b4"></button>
+          </div>
 
-        <div class="row">
-            <div class="col-2 mt-4 time-block t9">5:00 PM</div>
-            <textarea class="col-8 e5"></textarea>
-            <button class="col-1 saveButton fa fa-calendar-check-o b5"></button>
-        </div> 
-    </div>
-
+          <div class="row">
+              <div class="col-2 mt-4 time-block t9">5:00 PM</div>
+              <textarea class="col-8 e5"></textarea>
+              <button class="col-1 saveButton fa fa-calendar-check-o b5"></button>
+          </div> 
+      </div>
+  </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
