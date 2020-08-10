@@ -1,27 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en-us"> 
+    <meta name="description" content="Work planner used to save your schedule for each day">
+    <meta name="author" content="Doug Brown - Network Media Technology, LLC" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -39,6 +28,7 @@
     </header>
     <section class="container">
       <div class="mb-4">
+        <div>
           <div class="row">
               <div class="col-2 mt-4 time-block t1">9:00 AM</div>
               <textarea class="col-8 first entertext e9"></textarea>
@@ -92,8 +82,12 @@
               <textarea class="col-8 e5"></textarea>
               <button class="col-1 saveButton fa fa-calendar-check-o b5"></button>
           </div> 
+        </div>
       </div>
   </section>
+  <footer class="container">
+    <p>Copyright &#169;	2020 Doug Brown - Network Media Technology, LLC</p>
+  </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>

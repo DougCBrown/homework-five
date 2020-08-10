@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: tan;
 }
   
 textarea {
@@ -20,11 +21,15 @@ header {
     vertical-align: top;
 }
 section {
+    width: 900px;
     border: black 5px;
     border-style: inset;
     border-radius: 10px;
-    box-shadow: #7c7c7c;
     vertical-align: top;
+    background-color: white;
+}
+section.div {
+    box-shadow: #7c7c7c;    
 }
 .first {
     border-top: 1px solid black;
@@ -69,11 +74,10 @@ section {
 .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid white;
 }
   
 .hour {
-    background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
 }
@@ -84,7 +88,7 @@ section {
 }
   
 .present {
-    background-color: #f8f18e;
+    background-color: red;
 }
   
 .future {
@@ -104,5 +108,8 @@ section {
     font-size: 32px;
     background-color: rgb(16, 199, 240);
     transition: all .3s ease-in-out;
+}
+footer {
+    text-align: center;
 }
   
