@@ -1,0 +1,97 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    border: black;
+}
+  
+textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black; 
+    padding: 10px;
+    line-height: 120%;
+}
+header {
+    padding: 0px;
+    vertical-align: top;
+}
+.first {
+    border-top: 1px solid black;
+}
+.vertical-center {
+    background: transparent;
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    align-content: center;
+    vertical-align: top;
+  }
+  
+.jumbotron {
+    vertical-align: top;
+    font-size: 30px;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px ;
+    border: 2px inset gray;
+    box-shadow: #7c7c7c;
+
+}
+
+#currentDay {
+    font-weight: bolder;
+    font-size: 32px;
+}
+  
+.description{
+    white-space: pre-wrap;
+}
+  
+.time-block{
+    text-align: center;
+    border-bottom: 1px solid black; 
+}
+  
+.row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;;
+}
+  
+.hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+}
+  
+.past {
+    background-color: #7c7c7c;
+    color: white;
+}
+  
+.present {
+    background-color: #f8f18e;
+}
+  
+.future {
+    background-color: #77dd77;
+}
+  
+.saveButton {
+    border: 1px solid black;
+    font-size: 24px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06AED5;
+    color: white;
+}
+  
+.saveButton:hover {
+    font-size: 32px;
+    background-color: rgb(16, 199, 240);
+    transition: all .3s ease-in-out;
+}
+  
