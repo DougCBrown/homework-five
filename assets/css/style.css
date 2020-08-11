@@ -19,6 +19,17 @@ textarea {
     padding: 10px;
     line-height: 120%;
 }
+textarea.past {
+    background: gray;
+}
+
+textarea.current {
+    background: red;
+}
+
+textarea.future {
+    background: green;
+}
 /* the header section is where the jumbotron is located and 
     worked to be sure the alignment would be at the top of the page*/
 header {
