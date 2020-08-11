@@ -64,8 +64,8 @@ section {
     border: 4px inset gray;
     padding: 0px;
 }
-
-#currentDay {
+/* Id to format the output for the corrent date*/
+#currentDate {
     font-weight: bolder;
     font-size: 32px;
 }
@@ -73,23 +73,24 @@ section {
 .description{
     white-space: pre-wrap;
 }
-  
-.hour-block{
+/* this is to format the hours on the left side of the schedule*/  
+.hour-block {
     text-align: center;
     border-bottom: 1px solid black; 
 }
-  
+/* the size and border to seperate the row from each other*/  
 .row {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;
 }
-  
+/* Using hour to format the hour column with the font color and the top of the border*/  
 .hour {
     color: #000000;
     border-top: 1px dashed #000000;
 }
-  
+/* the textarea input is being changed depenting on the data-hour and calculation to show
+whether it is current-red past-gray or future-green */
 textarea.past {
     background-color: #7c7c7c;
     color: white;
@@ -102,7 +103,8 @@ textarea.present {
 textarea.future {
     background-color: #77dd77;
 }
-  
+/* the saveButton and the saveButton hover are being used to make the button responsive and
+add the visual affect for the calendar item to be saved on local storage*/  
 .saveButton {
     border: 1px solid black;
     font-size: 24px;
