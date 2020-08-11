@@ -25,11 +25,14 @@ function update() {
         } else {
             $(this).find('textarea').addClass('past');
         }
+/* Below I am trying to get the saved items from localstorage that are saved
+    and show them on the correct hour */        
       $(this).find('textarea').val(localStorage.getItem(thisHours));
  
     });
 }
-
+/* Below when the user clics on the save button it will write the textarea in out with numbers
+    being represented as the time in from 9 - 17 */
 $('.save-button').on('click', function () {
     var textValue = $(this).siblings('textarea').val();
     var parentHour = $(this).parent().data('hours');

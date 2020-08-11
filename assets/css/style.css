@@ -9,16 +9,15 @@ body {
 /* The textarea is used to receive the users input for the items that need to be done 
     throughout the work day. The textarea will allow for a large number of words to be 
     typed in.*/
-/*textarea {
-    background: transparent;
-    border: none;
-    resize: none;
+textarea {
     color: #000000;
     border-left: 1px solid black;
     border-bottom: 1px solid black; 
-    padding: 10px;
-    line-height: 120%;
-}*/
+    width: 50vw;
+
+}
+/* the textarea input is being changed depenting on the data-hour and calculation to show
+whether it is current-red past-gray or future-green */
 textarea.past {
     background: gray;
 }
@@ -40,7 +39,7 @@ header {
     the border styling and the alignment to keep it at the top just below
     the header. */
 section {
-    width: 900px;
+    width: 100vw;
     border: black 5px;
     border-style: inset;
     border-radius: 10px;
@@ -48,9 +47,6 @@ section {
     background-color: white;
 }
 
-/*.first {
-    border-top: 1px solid black;
-}*/
 /* With the verticle-center, I am trying to align the content
     of the jumbotron in the center of the box and vertically align it from 
     the top of the page so the it looks well layed out*/
@@ -76,14 +72,12 @@ section {
     padding: 0px;
 }
 /* Id to format the output for the corrent date*/
-#currentDay {
-    font-weight: bolder;
-    font-size: 32px;
-}
-  
-.description{
-    white-space: pre-wrap;
-}
+
+.time-block{
+    text-align: center;
+    border-bottom: 1px solid black; 
+}  
+
 /* this is to format the hours on the left side of the schedule*/  
 .hour-block {
     text-align: center;
@@ -92,28 +86,14 @@ section {
 /* the size and border to seperate the row from each other*/  
 .row {
     white-space: pre-wrap;
-    height: 80px;
     border-top: 1px solid white;
 }
 /* Using hour to format the hour column with the font color and the top of the border*/  
 .hour {
     color: #000000;
-    border-top: 1px dashed #000000;
+    border-top: 1px solid #000000;
 }
-/* the textarea input is being changed depenting on the data-hour and calculation to show
-whether it is current-red past-gray or future-green */
-textarea.past {
-    background-color: #7c7c7c;
-    color: white;
-}
-  
-textarea.present {
-    background-color: red;
-}
-  
-textarea.future {
-    background-color: #77dd77;
-}
+
 /* the saveButton and the saveButton hover are being used to make the button responsive and
 add the visual affect for the calendar item to be saved on local storage*/  
 .saveButton {
