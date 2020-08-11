@@ -38,77 +38,64 @@
   to try to page back and forth through each day of the month. I still have not figured that part out. It would be handy to use that and still with out
   checking the console to see if it has store the previous information. It would make the work schedule more functional to be able to put in the future
   work schedules-->
-        <p id="currentDate" class="lead"></p>
+        <p id="currentDay" class="lead"></p>
     </header>
     <section class="container">
-      <div class="mb-4">
-        <div>
-          <div class="row">
-<!-- I could only figure out a simple way to come up with builing the layout for the information for each hour. -->            
-              <div class="col-2 mt-4 hour-block" data-hours="9">9AM</div>
-              <textarea class="col-8 first entertext e9"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button9"></button>
-          </div>
-<!-- building the column layout for each row, for the time we are using 2 columns 
-  mt-4 is being used to set the margin-top to 1.5 the text area is a 8 columns and the e?? is the variable for the text 
-  that is put in-->
-          <div class="row">
-              <div class="col-2 mt-4 hour-block" data-hours="10">10AM</div>
-              <textarea class="col-8 e10"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button10"></button>
+        <div class="hour-block" data-hours="9">
+            <p>9AM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
           </div>
 
-          <div class="row">
-              <div class="col-2 mt-4 hour-block" data-hours="11">11AM</div>
-              <textarea class="col-8 e11"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button11"></button> 
+          <div class="hour-block" data-hours="10">
+            <p>10AM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
           </div>
-
-          <div class="row">
-              <div class="col-2 mt-4 hour-block"  data-hours="12">12PM</div>
-              <textarea class="col-8 e12"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button12"></button>
+          <div class="hour-block" data-hours="11">
+            <p>11AM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
           </div>
-
-          <div class="row">
-              <div class="col-2 mt-4 hour-block" data-hours="13">1PM</div>
-              <textarea class="col-8 e1"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button1"></button>
+          <div class="hour-block" data-hours="12">
+            <p>12PM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
           </div>
-
-          <div class="row">
-              <div class="col-2 mt-4 hour-block" data-hours="14">2PM</div>
-              <textarea class="col-8 e2"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button2"></button>
+          <div class="hour-block" data-hours="13">
+            <p>1PM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
           </div>
-
-          <div class="row">
-              <div class="col-2 mt-4 hour-block" data-hours="15" >3PM</div>
-              <textarea class="col-8 e3"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button3"></button>
+          <div class="hour-block" data-hours="14">
+            <p>2PM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
           </div>
-
-          <div class="row">
-              <div class="col-2 mt-4 hour-block" data-hours="16">4PM</div>
-              <textarea class="col-8 e4"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button4"></button>
+          <div class="hour-block" data-hours="15">
+            <p>3PM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
           </div>
-
-          <div class="row">
-              <div class="col-2 mt-4 hour-block" data-hours="17">5PM</div>
-              <textarea class="col-8 e5"></textarea>
-              <button class="col-1 saveButton fa fa-calendar-check-o button5"></button>
-          </div> 
-        </div>
-      </div>
+          <div class="hour-block" data-hours="16">
+            <p>4PM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
+          </div>
+          <div class="hour-block" data-hours="17">
+            <p>5PM</p>
+            <textarea></textarea>
+            <button type="button">Save</button>
+          </div>
   </section>
   <footer class="container">
     <p>Copyright &#169;	2020 Doug Brown - Network Media Technology, LLC</p>
   </footer>
+  
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  <!--  <script src="assets/js/moment.min.js"></script>-->
   <!--  <script src="assets/js/datescript.js"></script>-->
   </body>
 </html>

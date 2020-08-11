@@ -9,7 +9,7 @@ body {
 /* The textarea is used to receive the users input for the items that need to be done 
     throughout the work day. The textarea will allow for a large number of words to be 
     typed in.*/
-textarea {
+/*textarea {
     background: transparent;
     border: none;
     resize: none;
@@ -18,7 +18,7 @@ textarea {
     border-bottom: 1px solid black; 
     padding: 10px;
     line-height: 120%;
-}
+}*/
 textarea.past {
     background: gray;
 }
@@ -76,7 +76,7 @@ section {
     padding: 0px;
 }
 /* Id to format the output for the corrent date*/
-#currentDate {
+#currentDay {
     font-weight: bolder;
     font-size: 32px;
 }
