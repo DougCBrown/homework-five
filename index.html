@@ -44,69 +44,53 @@
     trying to lay each hour individually per row and then spacing baced on the col-2 thru col-8 I am having a problem with setting the save button in
     a seperate column to improve the look. -->
     <section class="container">
-      <div class="row">  
-          <div class='col-2 hour first'>9AM</div>
-          <div class="col-8 hour-block" data-hours="9" >
-            <textarea>text here </textarea>
-            <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-          </div>
-      </div>      
-      <div class="row">  
-            <div class='col-2 hour'>10AM</div>
-            <div class="col-8 hour-block" data-hours="10" >
-              <textarea>text here </textarea>
-              <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-            </div>
-      </div>
-      <div class="row">  
-            <div class='col-2 hour'>11AM</div>
-            <div class="col-8 hour-block" data-hours="11" >
-              <textarea>text here </textarea>
-              <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-            </div>
-      </div>
-      <div class="row">  
-            <div class='col-2 hour'>12PM</div>
-            <div class="col-8 hour-block" data-hours="12" >
-              <textarea>text here </textarea>
-              <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-            </div>
-      </div>
-      <div class="row">  
-            <div class='col-2 hour'>1PM</div>
-            <div class="col-8 hour-block" data-hours="13" >
-              <textarea>text here </textarea>
-              <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-            </div>
-      </div>
-      <div class="row">  
-            <div class='col-2 hour'>2PM</div>
-            <div class="col-8 hour-block" data-hours="14" >
-              <textarea>text here </textarea>
-              <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-            </div>
-      </div>
-      <div class="row">  
-            <div class='col-2 hour'>3PM</div>
-            <div class="col-8 hour-block" data-hours="15" >
-              <textarea>text here </textarea>
-              <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-            </div>
-      </div>
-      <div class="row">  
-            <div class='col-2 hour'>4PM</div>
-            <div class="col-8 hour-block" data-hours="16" >
-              <textarea>text here </textarea>
-              <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-          </div>
-      </div>
-      <div class="row">  
-          <div class='col-2'> 5pm</div>
-          <div class="col-8 hour-block" data-hours="17" >
-            <textarea>text here </textarea>
-           <button type="button" class="btn btn-primary mb-2 save-button ">Save</button>
-          </div>
-      </div>
+      <table>
+        <tr>
+          <td class="hour">9AM</td>
+          <td class="hour-block" data-hours="9" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr> 
+        <tr>
+          <td class="hour">10AM</td>
+          <td class="hour-block" data-hours="10" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr> 
+        <tr>
+          <td class="hour">11AM</td>
+          <td class="hour-block" data-hours="11" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr> 
+        <tr>
+          <td class="hour">12PM</td>
+          <td class="hour-block" data-hours="12" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr> 
+        <tr>
+          <td class="hour">1PM</td>
+          <td class="hour-block" data-hours="13" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr> 
+        <tr>
+          <td class="hour">2PM</td>
+          <td class="hour-block" data-hours="14" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr> 
+        <tr>
+          <td class="hour">3PM</td>
+          <td class="hour-block" data-hours="15" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr> 
+        <tr>
+          <td class="hour">4PM</td>
+          <td class="hour-block" data-hours="16" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr> 
+        <tr>
+          <td class="hour">5PM</td>
+          <td class="hour-block" data-hours="23" colspan="4"><textarea id="tarea">text here </textarea>
+          <button type="button" class="btn btn-primary mb-2 save-button ">Save</button></td>
+        </tr>                                                         
+    </table>     
   </section>
   <footer class="container">
     <p>Copyright &#169;	2020 Doug Brown - Network Media Technology, LLC</p>

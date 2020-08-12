@@ -78,6 +78,14 @@ section {
     border-bottom: 1px solid black; 
 }  
 
+#tarea {
+    width: 75   0px;
+    height: 60px;
+}
+
+#subbutton {
+    align-content: right;
+}
 /* this is to format the hours on the left side of the schedule*/  
 .hour-block {
     text-align: center;
@@ -90,6 +98,8 @@ section {
 }
 /* Using hour to format the hour column with the font color and the top of the border*/  
 .hour {
+    width: 10vw;
+    height: 50hw;
     color: #000000;
     border-top: 1px solid #000000;
 }

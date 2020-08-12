@@ -7,7 +7,7 @@ $(document).ready(function() {
 });
 // here I am trying to build the function to fill the
 // background colors for the textarea future - green, current - red, past - gray
-// 
+// The code from here down we did in Class and Jake worked us through the process
 function update() {
 
     var currentDate = new Date();
