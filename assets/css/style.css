@@ -77,7 +77,7 @@ section {
     text-align: center;
     border-bottom: 1px solid black; 
 }  
-
+/* the tarea is used to format the textarea for the width and height of the input area  */
 #tarea {
     width: 75   0px;
     height: 60px;
@@ -115,10 +115,6 @@ add the visual affect for the calendar item to be saved on local storage*/
     color: white;
 }
   
-.saveButton:hover {
-    font-size: 32px;
-    background-color: rgb(16, 199, 240);
-    transition: all .3s ease-in-out;
 }
 footer {
     text-align: center;
